@@ -1,7 +1,6 @@
 #!/bin/bash
 #
 OPTIONS_FILE="88x2bu.conf"
-
 SCRIPT_NAME="edit-options.sh"
 #
 # Purpose: Make it easier to edit the driver options file.
@@ -23,7 +22,7 @@ fi
 
 nano /etc/modprobe.d/${OPTIONS_FILE}
 
-read -p "Do you want to apply the new options by rebooting now? [y/n] " -n 1 -r
+read -p "Do you want to apply the new options by rebooting now? [y/N] " -n 1 -r
 echo    # move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
